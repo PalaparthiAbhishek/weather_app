@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, sans-serif;
+    background-size: cover;       /*  image covers the area */
+    background-position: center;  /* Where the image is positioned */
+    background-repeat: no-repeat; /* Whether the image repeats */
+    background-attachment: fixed; /* How the image scrolls with content */
+    background-color: #f3f3f3;  
+    
+    
+    background-image: url("images/cyclone.jpg"); 
+   
+    color: #000000; 
+}
+.navbar {
+    
+    color: #e5dfdf;            /*  text color for content inside the navbar */
+    padding: 10px 20px;      /* Padding inside the navbar*/
+    display: flex;           /* Using flexbox to easily align items */
+    align-items: center;     /* Vertically centers items within the navbar */
+    
+    position: relative;        
+    width: 100%;             /* full width of the screen */
+    top: 0;                  /* Aligning it to very top */
+    left: 0;                 /* Aligning it to very left */
+    z-index: 1000;           /* stays on top of other content */
+}
+.logo{
+    height: 45px;           /* fixed height for the logo */
+    width: auto;            /* Maintaining aspect ratio */
+    margin-right: 15px;     /* Space between the logo and the title */
+        
+}
+.title{
+    color:#ffffff;
+    margin:0;
+    font-size:2em;
+    font-weight:bold;
+}
+
+
+.container{
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    padding:30px;
+    border-radius: 15px;
+    
+    max-width:400px;
+    margin:50px auto;
+    margin-bottom: 100px;
+    text-align:center;
+   
+   
+}
+.form{
+    margin:10px auto;
+    
+}
+.searchBar {
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 70%;
+    margin-right: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    
+}
+.searchBar:hover { background-color: #e1e1e1; }
+.button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.button:hover { background-color: #0267d3; }
+.icon{
+    
+    width: 80px; 
+    height: 80px;
+    display: flex;
+    margin: 0 auto 10px;
+}
+.temperature{
+    font-size: 3em;
+    margin: 10px 0;
+    color: solid black;
+}
+.location,.time, .humidity, .pressure, .condition{
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #131212;;
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
